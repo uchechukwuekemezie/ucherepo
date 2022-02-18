@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>LodgeMAN</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="overlay" id="overlay">
+      <h3>Searching now...</h3>
+    </div>
+    <div class="hero-bg">
+      <section class="top">
+        <header>
+          <a href="#">LodgeMAN</a>
+        </header>
+
+        <h1><span>Experience</span> Elegance &amp Style</h1>
+
+        <p>
+          Lorem, ipsum dolor sit amet consectetur adipisicing elit. At
+          reprehenderit corrupti repellendus. Dolor sequi autem dolore voluptate
+          dicta! Suscipit, qui.
+        </p>
+
+        <div class="form-container">
+          <form action="">
+            <div class="form-left">
+              <label for="city">Enter your city:</label>
+              <input type="text" name="city" id="city" />
+              <p>Example: "Victoria Garden City"</p>
+            </div>
+
+            <input type="button" value="Book Suites Now" id="cta-btn" />
+          </form>
+        </div>
+      </section>
+    </div>
+
+    <section class="authentic">
+      <div class="right-col">
+        <h2>Echt Testimonials</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Porro
+          adipisci nemo pariatur ratione enim blanditiis libero ut iure nisi,
+          natus ab possimus? Velit, corrupti quidem?
+        </p>
+      </div>
+      <img src="/IMAGES/lodgeman.jpg" alt="image of bed" class="img" />
+    </section>
+  </body>
+
+  <script>
+    let btn = document.getElementById("cta-btn");
+    let overlay = document.getElementById("overlay");
+
+    btn.addEventListener("click", () => {
+      overlay.style.display = "grid";
+    });
+  </script>
+</html>
